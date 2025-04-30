@@ -1,0 +1,15 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.ISangeet" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Primary Brand Color -->
+                <item name="colorPrimary">#07F010</item>
+                <item name="colorPrimaryVariant">#0749F0</item>
+                <item name="colorOnPrimary">@color/black</item>
+
+        <!-- Secondary Brand Color -->
+                <item name="colorSecondary">#07F010</item>
+                <item name="colorSecondaryVariant">#07F0AE</item>
+                <item name="colorOnSecondary">@color/black</item>
+        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+    </style>
+</resources>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_anchor="@+id/frame_layout"
+        app:layout_anchorGravity="center">
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/fragmentContainerView"
+            android:name="com.example.isangeet.Home_Fragment"
+            android:layout_width="match_parent"
+            android:layout_height="601dp"
+            android:layout_marginTop="60dp"
+            tools:layout="@layout/fragment_home_" />
+
+        <com.google.android.material.bottomappbar.BottomAppBar
+            android:id="@+id/bottomAppBar"
+            android:layout_width="match_parent"
+            android:layout_height="67dp"
+            android:layout_gravity="bottom"
+            android:background="#000000"
+            app:backgroundTint="#000000"
+            app:fabCradleMargin="100dp"
+            app:fabCradleRoundedCornerRadius="100dp"
+            tools:ignore="BottomAppBar">
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/BottomNavigationView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:background="@android:color/transparent"
+                app:dividerInsetEnd="20dp"
+                app:itemPaddingBottom="15dp"
+                app:itemPaddingTop="5dp"
+                app:itemTextColor="#07EF10"
+                app:menu="@menu/botton_navigation">
+
+
+            </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+        </com.google.android.material.bottomappbar.BottomAppBar>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#000000"
+            android:fontFamily="@font/kavoon"
+            android:gravity="center"
+            android:text="i Sangeet"
+            android:textColor="#07F010"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+    </FrameLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="68dp"
+        android:gravity="center"
+        android:src="@drawable/search_icon2"
+        app:layout_anchor="@+id/bottomAppBar"
+        app:layout_anchorGravity="top|center"
+        app:maxImageSize="35dp"
+        app:tint="@color/black" />
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
